@@ -10,6 +10,10 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/styles.css">
@@ -19,16 +23,34 @@
 
 <body>
 
-	<section class="class-section">
+	<header class="header">
 		<div class="container">
-			<div class="class-section__wrapper">
-				content
+			<div class="header-wrapper">
+				<div class="logo">
+					<img src="./images/header/Logo.svg" alt="logo">
+				</div>
+				<!-- /.logo -->
+				<nav class="navigation">
+					<a href="">О нас</a>
+					<a href="">FilmToolz</a>
+					<a href="">DocToolz</a>
+					<a href="">Услуги</a>
+					<a href="">Контакты</a>
+				</nav>
+				<!-- /.navigation -->
+				<div class="switch-group">
+					<button class="switch-btn">ru</button>
+					<!-- /.switch-btn -->
+					<button class="switch-btn">en</button>
+					<!-- /.switch-btn -->
+				</div>
+				<!-- /.switch-group -->
 			</div>
-			<!-- /.class-section__wrapper -->
+			<!-- /.header-wrapper -->
 		</div>
 		<!-- /.container -->
-	</section>
-	<!-- /.class-section -->
+	</header>
+	<!-- /.header -->
 
 	<script src="./js/scripts.js"></script>
 
