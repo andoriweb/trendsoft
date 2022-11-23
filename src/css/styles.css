@@ -60,7 +60,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
 }
 .navigation-mob__nav {
   display: flex;
@@ -78,7 +78,7 @@ a {
   margin-bottom: 0;
 }
 .navigation-mob__btn {
-  display: block;
+  display: none;
   position: relative;
   width: 30px;
   height: 3px;
@@ -158,7 +158,7 @@ a {
     width: 540px;
   }
   .logo {
-    width: 100px;
+    width: 120px;
   }
   .switch-btn {
     font-size: 12px;
@@ -167,7 +167,7 @@ a {
   .navigation {
     display: none;
   }
-  .navigation_mob {
+  .navigation-mob__btn {
     display: block;
   }
 }
