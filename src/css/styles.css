@@ -14,13 +14,10 @@ img {
   max-width: 100%;
 }
 
-section {
-  padding: 7% 0;
-}
-
 .container {
   width: 1164px;
   margin: 0 auto;
+  border: 1px solid green;
 }
 
 a {
@@ -123,6 +120,42 @@ a {
 .switch-btn_active {
   background-color: #fff;
   color: #000;
+}
+
+/* <section class="hero"> */
+.hero {
+  background-color: #F83718;
+  padding: 90px 0;
+}
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-content {
+  flex-basis: 50%;
+  color: #fff;
+}
+.hero__title {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  max-width: 535px;
+  line-height: 59px;
+}
+.hero__text {
+  font-weight: 400;
+  max-width: 445px;
+  margin-bottom: 25px;
+  line-height: 24px;
+}
+.hero__text:last-child {
+  margin-bottom: 0;
+}
+.hero-img {
+  flex-basis: 50%;
+  text-align: right;
 }
 
 /* //////////////////////////// */
