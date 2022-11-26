@@ -17,7 +17,6 @@ img {
 .container {
   width: 1164px;
   margin: 0 auto;
-  border: 1px solid green;
 }
 
 a {
@@ -171,6 +170,9 @@ a {
   .container {
     width: 960px;
   }
+  .hero__title {
+    font-size: 42px;
+  }
 }
 @media (max-width: 991px) {
   .container {
@@ -178,20 +180,6 @@ a {
   }
   .header-wrapper {
     flex-wrap: wrap;
-  }
-  .navigation {
-    flex-basis: 100%;
-    text-align: center;
-    margin-top: 30px;
-    order: 2;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    width: 540px;
-  }
-  .logo {
-    width: 120px;
   }
   .switch-btn {
     font-size: 12px;
@@ -203,9 +191,34 @@ a {
   .navigation-mob__btn {
     display: block;
   }
+  .hero-wrapper {
+    flex-direction: column;
+  }
+  .hero-content {
+    margin-bottom: 35px;
+  }
+  .hero__text {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+  .logo {
+    width: 120px;
+  }
+  .hero {
+    padding: 65px 0;
+  }
 }
 @media (max-width: 575px) {
   .container {
-    width: 100%;
+    width: 95%;
+  }
+  .hero__title {
+    font-size: 28px;
+    text-align: center;
+    line-height: 41px;
   }
 }
