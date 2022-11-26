@@ -45,6 +45,15 @@
     &__text
       max-width: 100%
 
+  .module
+    &_left, &_right
+      &::before
+        display: none
+    &__img
+      width: 30%
+    &__content
+      width: 70%
+
 @media ( max-width: 767px )
   .container
     width: 540px

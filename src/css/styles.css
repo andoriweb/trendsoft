@@ -50,11 +50,15 @@ a {
   padding: 50px 0;
 }
 .module__img {
-  flex-basis: 50%;
+  width: 50%;
 }
 .module__content {
-  flex-basis: 40%;
+  width: 40%;
   padding-left: 30px;
+}
+.module__content_right {
+  padding-left: 0px;
+  padding-right: 30px;
 }
 .module__title {
   font-size: 24px;
@@ -317,6 +321,15 @@ a {
   }
   .hero__text {
     max-width: 100%;
+  }
+  .module_left::before, .module_right::before {
+    display: none;
+  }
+  .module__img {
+    width: 30%;
+  }
+  .module__content {
+    width: 70%;
   }
 }
 @media (max-width: 767px) {
