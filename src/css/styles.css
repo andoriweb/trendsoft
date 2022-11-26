@@ -43,6 +43,68 @@ a {
   line-height: 25px;
 }
 
+.module {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.module__img {
+  flex-basis: 50%;
+}
+.module__content {
+  flex-basis: 40%;
+  padding-left: 30px;
+}
+.module__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.module__text {
+  line-height: 21px;
+  margin-bottom: 30px;
+}
+.module_left {
+  position: relative;
+}
+.module_left::before {
+  content: "";
+  display: block;
+  width: 168px;
+  height: 168px;
+  background: url(../images/service/module-decor.svg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0px;
+  left: -40px;
+}
+.module_right {
+  position: relative;
+}
+.module_right::before {
+  content: "";
+  display: block;
+  width: 168px;
+  height: 168px;
+  background: url(../images/service/module-decor.svg) center no-repeat;
+  background-size: contain;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 0px;
+  right: -40px;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #F83718;
+  padding: 10px 30px;
+}
+
 /* <header class="header"> */
 .header {
   padding: 20px 0;
@@ -190,6 +252,7 @@ a {
 .service-progress__wrap {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .service-progress__block {
   text-align: center;
