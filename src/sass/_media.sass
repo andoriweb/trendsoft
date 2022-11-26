@@ -14,6 +14,11 @@
     &__title
       font-size: 42px
 
+  .service
+    &-progress
+      &__wrap
+        justify-content: space-between
+
 @media ( max-width: 991px )
   .container
     width: 720px
@@ -50,6 +55,19 @@
   .hero
     padding: 65px 0
 
+  .service
+    padding-top: 65px
+    &__title
+      font-size: 34px
+      line-height: 41px
+    &-progress
+      &__wrap
+        flex-direction: column
+      &__block
+        margin-bottom: 40px
+        &:last-child
+          margin-bottom: 0
+
 @media ( max-width: 575px )
   .container
     width: 95%
@@ -59,3 +77,10 @@
       font-size: 28px
       text-align: center
       line-height: 41px
+
+  .service
+    &__title
+      font-size: 25px
+      line-height: 33px
+    &__description
+      margin: 0 auto 35px

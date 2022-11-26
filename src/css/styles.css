@@ -180,6 +180,9 @@ a {
   max-width: 538px;
   margin: 0 auto 32px;
 }
+.service__title a {
+  color: #F83718;
+}
 .service__description {
   max-width: 580px;
   margin: 0 auto 70px;
@@ -201,9 +204,9 @@ a {
 .service-progress__descr span {
   font-size: 40px;
   font-weight: 700;
-  color: #F83718;
   display: block;
   margin-bottom: 13px;
+  color: #F83718;
 }
 
 /* //////////////////////////// */
@@ -221,6 +224,9 @@ a {
   }
   .hero__title {
     font-size: 42px;
+  }
+  .service-progress__wrap {
+    justify-content: space-between;
   }
 }
 @media (max-width: 991px) {
@@ -260,6 +266,22 @@ a {
   .hero {
     padding: 65px 0;
   }
+  .service {
+    padding-top: 65px;
+  }
+  .service__title {
+    font-size: 34px;
+    line-height: 41px;
+  }
+  .service-progress__wrap {
+    flex-direction: column;
+  }
+  .service-progress__block {
+    margin-bottom: 40px;
+  }
+  .service-progress__block:last-child {
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 575px) {
   .container {
@@ -269,5 +291,12 @@ a {
     font-size: 28px;
     text-align: center;
     line-height: 41px;
+  }
+  .service__title {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .service__description {
+    margin: 0 auto 35px;
   }
 }
