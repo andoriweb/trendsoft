@@ -157,7 +157,7 @@ a {
   text-align: right;
 }
 
-/* //////////////////////////// */
+/* <section class="service"> */ /* //////////////////////////// */
 /** Hover **/
 @media (min-width: 992px) {
   .button:hover {
