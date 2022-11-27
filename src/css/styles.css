@@ -8,6 +8,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 16px;
+  background-color: #F9F9F9;
 }
 
 img {
@@ -107,6 +108,35 @@ a {
   color: #fff;
   background-color: #F83718;
   padding: 10px 30px;
+}
+
+.add-project {
+  padding: 30px;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  box-shadow: 0px 2px 26px -19px #4b4d53;
+}
+.add-project__select {
+  font-size: 20px;
+  letter-spacing: 1.1px;
+  margin-bottom: 25px;
+}
+.add-project__list {
+  margin-bottom: 25px;
+}
+.add-project__list li {
+  margin-bottom: 15px;
+}
+.add-project__list li:last-child {
+  margin-bottom: 0;
+}
+.add-project__btn {
+  font-size: 14px;
+  padding: 10px 25px;
+  letter-spacing: 1.1px;
+  border: 1px solid #01AFEB;
+  color: #01AFEB;
 }
 
 /* <header class="header"> */
@@ -278,7 +308,7 @@ a {
 
 /* <section class="casting"> */
 .casting {
-  padding: 75px 0 0px 0;
+  padding: 75px 0 50px 0;
 }
 .casting__title {
   font-size: 34px;
@@ -309,7 +339,41 @@ a {
 }
 .casting__btn {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 25px;
+}
+.casting-img__wrap {
+  position: relative;
+  background-color: #F9F9F9;
+  padding: 35px 50px;
+}
+.casting-img__wrap::before {
+  content: "";
+  display: block;
+  width: 168px;
+  height: 168px;
+  background: url(../images/casting/decor.svg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -28px;
+  left: -28px;
+  z-index: -1;
+}
+.casting-img__wrap::before::after {
+  content: "";
+  display: block;
+  width: 168px;
+  height: 168px;
+  background: url(../images/casting/decor.svg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -28px;
+  right: -28px;
+  z-index: -1;
+}
+.casting__projects {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* //////////////////////////// */

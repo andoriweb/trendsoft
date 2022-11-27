@@ -1,7 +1,7 @@
 /* <section class="casting"> */
 
 .casting
-  padding: 75px 0 0px 0
+  padding: 75px 0 50px 0
 
   &__title
     font-size: 34px
@@ -33,4 +33,40 @@
 
   &__btn
     display: block
-    margin: 0 auto
+    margin: 0 auto 25px
+
+  &-img__wrap
+    position: relative
+    background-color: $body-color
+    padding: 35px 50px
+
+    &::before
+      content: ''
+      display: block
+      width: 168px
+      height: 168px
+      background: url(../images/casting/decor.svg) center no-repeat
+      background-size: contain
+      position: absolute
+      bottom: -28px
+      left: -28px
+      z-index: -1
+
+      &::after
+        content: ''
+        display: block
+        width: 168px
+        height: 168px
+        background: url(../images/casting/decor.svg) center no-repeat
+        background-size: contain
+        position: absolute
+        top: -28px
+        right: -28px
+        z-index: -1
+
+  &__projects
+    position: absolute
+    top: 0
+    right: 0
+
+    // border: 1px solid red
