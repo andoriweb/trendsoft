@@ -326,10 +326,10 @@ a {
     display: none;
   }
   .module__img {
-    width: 30%;
+    width: 50%;
   }
   .module__content {
-    width: 70%;
+    width: 50%;
   }
 }
 @media (max-width: 767px) {
@@ -358,6 +358,17 @@ a {
   .service-progress__block:last-child {
     margin-bottom: 0;
   }
+  .module {
+    flex-direction: column;
+  }
+  .module__img {
+    width: 100%;
+  }
+  .module__content {
+    width: 80%;
+    order: -1;
+    margin-bottom: 35px;
+  }
 }
 @media (max-width: 575px) {
   .container {
@@ -374,5 +385,16 @@ a {
   }
   .service__description {
     margin: 0 auto 35px;
+  }
+  .module__img {
+    display: none;
+  }
+  .module__content {
+    width: 100%;
+    margin-bottom: 0px;
+    padding-left: 10px;
+  }
+  .module__title {
+    line-height: 1.2;
   }
 }
