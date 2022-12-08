@@ -521,6 +521,9 @@ a {
   .block-decor_big::before, .block-decor_big::after {
     display: none;
   }
+  .casting-img__project {
+    width: 30%;
+  }
   .documents__module {
     flex-direction: column-reverse;
   }
@@ -590,6 +593,15 @@ a {
   }
   .casting-progress__block:last-child {
     margin-bottom: 0;
+  }
+  .casting-img__wrap {
+    padding: 35px 0 0;
+  }
+  .casting-img__project {
+    top: 17px;
+  }
+  .block-decor::before, .block-decor::after {
+    display: none;
   }
   .documents__title {
     font-size: 34px;
